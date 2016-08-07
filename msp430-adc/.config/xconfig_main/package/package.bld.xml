@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/main_pe430.c"/>
     </sources>
     <configscripts>
-        <srcFile name="C:/Users/john/workspace_v6_1_3/Solar Watering ADC/main.cfg"/>
+        <srcFile name="C:/Users/john/workspace_v6_1_3/solar-watering-system/msp430-adc/main.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -39,12 +39,12 @@
     <configuration name="main"
         pname="main.pe430"
         target="ti.targets.msp430.elf.MSP430"
-        platform="ti.platforms.msp430:MSP430G2553"
+        platform="ti.platforms.msp430:MSP430G2452"
         profile="release"
         isPartial="false"
         xCfgScript="package/cfg/main_pe430.cfg"
         xCfgPrefix="package/cfg/main_pe430"
-        cfgScript="C:/Users/john/workspace_v6_1_3/Solar Watering ADC/main.cfg"
+        cfgScript="C:/Users/john/workspace_v6_1_3/solar-watering-system/msp430-adc/main.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -52,11 +52,11 @@
     <executable name="main"
         pname="main.xe430"
         target="ti.targets.msp430.elf.MSP430"
-        platform="ti.platforms.msp430:MSP430G2553"
+        platform="ti.platforms.msp430:MSP430G2452"
         profile="release"
         xCfgScript="package/cfg/main_pe430.cfg"
         xCfgPrefix="package/cfg/main_pe430"
-        cfgScript="C:/Users/john/workspace_v6_1_3/Solar Watering ADC/main.cfg"
+        cfgScript="C:/Users/john/workspace_v6_1_3/solar-watering-system/msp430-adc/main.cfg"
         cfgArgs="null"
         />
     </executables>

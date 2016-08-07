@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/main_pe430.xdl
-	$(SED) 's"^\"\(package/cfg/main_pe430cfg.cmd\)\"$""\"C:/Users/john/workspace_v6_1_3/Solar Watering ADC/.config/xconfig_main/\1\""' package/cfg/main_pe430.xdl > $@
+	$(SED) 's"^\"\(package/cfg/main_pe430cfg.cmd\)\"$""\"C:/Users/john/workspace_v6_1_3/solar-watering-system/msp430-adc/.config/xconfig_main/\1\""' package/cfg/main_pe430.xdl > $@
 	-$(SETDATE) -r:max package/cfg/main_pe430.h compiler.opt compiler.opt.defs

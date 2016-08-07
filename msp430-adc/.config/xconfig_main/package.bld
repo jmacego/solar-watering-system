@@ -2,7 +2,7 @@
 
 var targ = xdc.module('ti.targets.msp430.elf.MSP430');
 /* configuro was told the platform explicitly */
-var platform = 'ti.platforms.msp430:MSP430G2553';
+var platform = 'ti.platforms.msp430:MSP430G2452';
 
 /* decide whether to make an assembly or an executable */
 var makeAssembly = false;
@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'C:/Users/john/workspace_v6_1_3/Solar Watering ADC/main.cfg',
+        cfgScript: 'C:/Users/john/workspace_v6_1_3/solar-watering-system/msp430-adc/main.cfg',
         profile: 'release',
         cfgHome: 'xconfig_main',
         xsopts: "-Dxdc.cfg.tsort.policy=fast -Dxdc.cfg.gen.metadataFiles=false -Dxdc.cfg.SourceDir.verbose=7",
@@ -41,8 +41,8 @@ else {
 }
 
 var thisObj = {
-    cfg:        'C:/Users/john/workspace_v6_1_3/Solar Watering ADC/main.cfg',
-    outputPath: 'C:/Users/john/workspace_v6_1_3/Solar Watering ADC/.config/xconfig_main',
+    cfg:        'C:/Users/john/workspace_v6_1_3/solar-watering-system/msp430-adc/main.cfg',
+    outputPath: 'C:/Users/john/workspace_v6_1_3/solar-watering-system/msp430-adc/.config/xconfig_main',
     exeName:    'main' + suffix,
     exeIntName: 'main' + suffix.replace('.', '_'),
     targ:       targ,
