@@ -102,7 +102,6 @@ int main(void)
 	const long cf_offset = cal ? 5668864L - (cal->t3015 * cf_scale) : 0;
 	const long ck_offset = cc_offset + 17901158L;
 
-   // TimerA_UART_init();                     // Start Timer_A UART
     TimerA_UART_tx(12);
     TimerA_UART_print("G2xx2 TimerA UART\r\n");
     TimerA_UART_print("READY.\r\n");
